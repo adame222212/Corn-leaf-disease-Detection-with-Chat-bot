@@ -1,0 +1,5 @@
+Class,Field_1,Field_2,Field_3,Field_4,Field_5,Field_6,Field_7,Field_8,Field_9,Selected_Field,Confidence
+Common Rust,1,0,0,0,0,0,0,0,0,1,0.71
+Northern Blight,1,0,0,0,0,0,0,0,0,1,0.68
+Northern Blight,0,0,0,0,0,1,0,0,0,6,0.94
+Healthy,0,0,0,0,0,1,0,0,0,6,0.68
