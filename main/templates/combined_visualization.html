@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style_vis.css') }}"
+    />
+    <link rel="icon" href="{{ url_for('static', filename='logo.jpg') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <title>Field Severity</title>
+
+    <!-- Add necessary scripts and links for rendering plots -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.plot.ly/plotly.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="{{ url_for('static', filename='logo.jpg') }}"
+        alt="MYLOGO"
+      />
+      <li>
+        <ul>
+          <a class="navs home" href="{{ url_for('area_analysis') }}">Back</a>
+        </ul>
+      </li>
+    </nav>
+    <div class="main">
+      <div class="subcon">
+        <h1>Severity of Diseases In each Field</h1>
+
+        <div class="class-counts">
+          <h2>Average Diseases in All Fields</h2>
+
+          <ul>
+            {% for class_name, average in average_classes_result.items() %}
+            <li>{{ class_name }}: {{ average }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <button id="displayButton">
+          Display
+          <span class="tooltiptext"
+            >It will display how many diseases are detected each field</span
+          >
+        </button>
+
+        <!-- Combined Count Plot -->
+        <div id="hid">
+          <h1 class="myplot">Combined Count Plot</h1>
+          <div>
+            <!-- Assuming img_src_combined_count_plot is a base64-encoded image -->
+            <img
+              src="{{ img_src_combined_count_plot }}"
+              alt="Combined Count Plot for Fields 1-9"
+            />
+          </div>
+        </div>
+
+        <!-- Count Plots for Each Field -->
+        {% for field_data in occurrences_list %}
+        <div>
+          <h2>{{ field_data.field_name }}</h2>
+          <!-- Assuming img_src_count_plot is a base64-encoded image -->
+          <img
+            id="plots"
+            src="{{ field_data.img_src_count_plot }}"
+            alt="{{ field_data.field_name }} Count Plot"
+          />
+        </div>
+        {% endfor %}
+
+        <!-- Display class values and count plot for each field -->
+        <div class="conFi">
+          {% for field_data in class_values_list %}
+          <div class="sim">
+            <div class="subFi">
+              <h2>{{ field_data.field_name }}</h2>
+
+              {% if field_data.common_rust_severity %}
+              <p>
+                <span>Common blight</span> <br />
+                <span class="bld"> Severity:</span>
+                <span class="named">{{ field_data.common_rust_severity }}</span>
+              </p>
+              <p>{{ field_data.common_rust_message }}</p>
+              {% endif %} {% if field_data.northern_blight_severity %}
+
+              <p>
+                <span>Northern Blight</span> <br /><span class="bld">
+                  Severity:</span
+                >
+                <span class="named"
+                  >{{ field_data.northern_blight_severity }}</span
+                >
+              </p>
+              <p>{{ field_data.northern_blight_message }}</p>
+              {% endif %} {% if field_data.healthy_severity %}
+              <p>
+                <span>Healthy</span> <br /><span class="bld"> Severity:</span>
+                <span class="named">{{ field_data.healthy_severity }}</span>
+              </p>
+              <p>{{ field_data.healthy_message }}</p>
+              {% endif %} {% if field_data.gray_spot_severity %}
+              <p>
+                <span>Gray spot</span> <br /><span class="bld"> Severity:</span>
+                <span class="named">{{ field_data.gray_spot_severity }}</span>
+              </p>
+              <p>{{ field_data.gray_spot_message }}</p>
+              {% endif %} {% if field_data.equal_percentage_message %}
+              <p>{{ field_data.equal_percentage_message }}</p>
+              {% endif %}
+              <ul>
+                {% for class_name, percentage in
+                field_data.class_percentages.items() %}
+                <li>{{ class_name }}: <span>{{ percentage }}% </span></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("displayButton")
+        .addEventListener("click", function () {
+          // Toggle the display of the content
+          var displayContent = document.getElementById("hid");
+          displayContent.style.display =
+            displayContent.style.display === "none" ||
+            displayContent.style.display === ""
+              ? "block"
+              : "none";
+        });
+    </script>
+  </body>
+</html>

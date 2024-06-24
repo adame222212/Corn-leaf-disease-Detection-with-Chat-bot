@@ -1,0 +1,711 @@
+{
+  "intents": [
+    {
+      "tag": "errors",
+      "patterns": ["", " ", " "],
+      "responses": [
+        "i can't understand that.",
+        "My capability is beyond that one"
+      ]
+    },
+    {
+      "tag": " cercospora_zeae-maydis ",
+      "patterns": [
+        "what is cercospora zeae-maydis ",
+        "what is zeae-maydis ",
+        "what is cercospora ",
+        "cercospora ",
+        "cercospora zeae-maydis "
+      ],
+      "responses": [
+        "Cercospora zeae-maydis, commonly known as Cercospora leaf spot, is a fungal pathogen that affects corn (maize) plants. This plant disease primarily manifests as leaf spots on corn leaves."
+      ]
+    },
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hey", "hi"],
+      "responses": ["Hello!!", "what now?"]
+    },
+    {
+      "tag": "cnn",
+      "patterns": [
+        "what is cnn?",
+        "what is convolutional neural network?",
+        "what is cnn means?",
+        "what is convolutional neural network anyway?"
+      ],
+      "responses": [
+        "Convolutional Neural Network. It is a type of deep learning algorithm that is primarily used for processing and analyzing visual data, such as images and videos. CNNs are a class of artificial neural networks designed to automatically and adaptively learn spatial hierarchies of features from input data.",
+        "Convolutional Neural Network are trained using labeled data to learn the features that are relevant for a specific task, making them highly effective for image analysis tasks like image classification, object detection, and segmentation. They have also been applied to a variety of other domains, including natural language processing and speech recognition, by adapting their architecture for different types of data."
+      ]
+    },
+    {
+      "tag": "chat_bot",
+      "patterns": [
+        "Who are you?",
+        "What can you do?",
+        "what is your functionality",
+        "introduce yourself"
+      ],
+      "responses": [
+        "Hi! I'm your friendly chat bot. I can answer questions related with the corn leaf. This project aims to identify what kind of disease is the corn leaf have and also I'm a part of it. But also i have some error.",
+        "Hello there! I'm a helpful chatbot here to assist with questions about corn leaves. This project is focused on determining the specific disease affecting corn leaves, and I'm an integral part of it. However, I do have a few issues to address."
+      ]
+    },
+    {
+      "tag": "chat_bot2",
+      "patterns": [
+        "what is chatbot?",
+        "what is chat bot?",
+        "chat bot?",
+        "what is chatbot anyway?"
+      ],
+      "responses": [
+        "A chatbot is a computer program or artificial intelligence application designed to conduct a conversation with human users through text or speech interactions. Chatbots are often used to automate customer support, provide information, assist with tasks, and engage in natural language conversations. They can be found in various applications, such as websites, messaging platforms, mobile apps, and even voice-based virtual assistants like Siri and Alexa.",
+        "Chatbots use natural language processing (NLP) and machine learning techniques to understand and generate human language. They can be rule-based, where they follow predefined scripts and rules, or they can be more advanced and employ machine learning algorithms to learn from interactions and improve their responses over time.",
+        "Chatbots are conversational agents that use natural language processing to communicate with users."
+      ]
+    },
+    {
+      "tag": "made",
+      "patterns": [
+        "how they made you?",
+        "How they created you?",
+        "how they build you"
+      ],
+      "responses": [
+        "They build me using a CNN or convolutional neural networks. CNNs can automatically learn and extract features from images, making them highly effective in tasks like image classification. By training a CNN on a dataset of labeled images, the network can learn to identify patterns and features that distinguish one class from another. Did you know I'm also made of CNN ",
+        "The incorporation of CNNs in my design empowered me to automatically discern unique attributes and patterns within images, enhancing my image recognition capabilities."
+      ]
+    },
+    {
+      "tag": "image_classification",
+      "patterns": [
+        "what is image_classification",
+        "what is imageclassification",
+        "what is image classification?",
+        "what is image classification anyway?"
+      ],
+      "responses": [
+        "Image classification, on the other hand, is a computer vision task that involves categorizing or labeling images into predefined classes or categories. The goal is to teach a computer to recognize and assign a specific label to an image based on its content. Image classification is widely used in various applications, such as object recognition, face detection, medical image analysis, autonomous vehicles, and more.",
+        " Image classification is a computer vision task that involves labeling images into specific categories, often using deep learning techniques like CNNs."
+      ]
+    },
+    {
+      "tag": "devs",
+      "patterns": [
+        "who develop you?",
+        "who is the developer of you?",
+        "who are the developer of you?",
+        "who made you?"
+      ],
+      "responses": [
+        "The creators of mine are Angelo C Adame and Mark Zxeyus Den De Guzman. They are a student of ISABELA STATE UNIVERSITY taking a Bachelor of Science in computer science ",
+        "The minds behind this project, Angelo C Adame and Mark Zxeyus Den De Guzman, are both students at ISABELA STATE UNIVERSITY, where they are studying computer science.",
+        "This project was developed by Angelo C Adame and Mark Zxeyus Den De Guzman, who are currently undergraduates at ISABELA STATE UNIVERSITY, majoring in computer science."
+      ]
+    },
+    {
+      "tag": "cornss",
+      "patterns": ["what is corn?", "corn?"],
+      "responses": [
+        "Corn, also known as maize (scientific name: Zea mays), is a cereal grain and one of the most widely grown and important crops in the world. It is a staple food in many countries and has a wide range of uses. Corn is believed to have originated in the Americas and has been cultivated for thousands of years.",
+        "Corn is a versatile and important crop that has been cultivated and consumed by people for centuries. It plays a significant role in agriculture, food production, and various industries around the world."
+      ]
+    },
+    {
+      "tag": "history_of _corn",
+      "patterns": ["what is the history of corn?", "history of corn"],
+      "responses": [
+        "Corn was originally domesticated in Mexico by native peoples by about 9,000 years ago. They used many generations of selective breeding to transform a wild teosinte grass with small grains into the rich source of food that is modern Zea mays",
+        "Scientists believe people living in central Mexico developed corn at least 7000 years ago. It was started from a wild grass called teosinte."
+      ]
+    },
+    {
+      "tag": "blight_corn",
+      "patterns": [
+        "what is corn blight",
+        "what is nclb",
+        "blight on leaf",
+        "blight?"
+      ],
+      "responses": [
+        "Northern corn leaf blight (NCLB) is a plant disease that affects corn crops, causing significant damage to the plants and leading to reduced yields and economic losses for farmers; it can be caused by various pathogens, including fungi and bacteria.",
+        "Northern Corn Leaf Blight (NCLB) is a plant ailment that impacts corn crops, resulting in substantial harm to the plants and resulting in diminished harvests and financial setbacks for farmers. It can be instigated by a range of pathogens, encompassing fungi and bacteria.",
+        "Northern corn leaf blight (NCLB) is caused by the fungus Setosphaeria turcica. Symptoms usually appear first on the lower leaves. Leaf lesions are long (1 to 6 inches) and elliptical, gray-green at first but then turn pale gray or tan."
+      ]
+    },
+    {
+      "tag": "Setosphaeria_turcica",
+      "patterns": [
+        "what is setosphaeria turcica",
+        "setosphaeria turcica?",
+        "setosphaeria",
+        "what is setosphaeriaturcica"
+      ],
+      "responses": [
+        "Setosphaeria turcica is a fungal pathogen known for causing Northern corn leaf blight in maize (corn) plants.",
+        "This disease can lead to significant damage to corn crops, resulting in reduced yields and economic losses for farmers. The fungus primarily affects the leaves of the corn plants and can cause characteristic elongated lesions with dark borders."
+      ]
+    },
+    {
+      "tag": "symptoms_blight",
+      "patterns": [
+        "symptoms  of blight on corn leaf",
+        "what are the symptoms of blight? ",
+        "what are Symptoms of blight",
+        "symptoms of blight",
+        "symptoms of blight on corn leaf"
+      ],
+      "responses": [
+        "The symptoms of blight in corn leaves, particularly Northern corn leaf blight caused by the fungus Setosphaeria turcica, manifest as elongated lesions with dark, tan, or grayish centers and a characteristic dark border, running parallel to the veins of the corn leaf. These lesions can extensively blight the leaves, reducing photosynthesis and overall plant health, potentially leading to significant reductions in corn yields and economic losses for farmers. In advanced stages, spore-bearing structures (pycnidia) may develop within the lesions. The disease can also affect other parts of the corn plant, including tassels and husks, and severe infestations can result in stunted growth and premature plant death. Monitoring and implementing management strategies, such as using resistant corn varieties and fungicides, are crucial for mitigating its impact on corn crops."
+      ]
+    },
+    {
+      "tag": "cure_blight",
+      "patterns": [
+        "what is cure of nclb?",
+        "what is cure of blight?",
+        "what is treatment of nclb?",
+        "what is treatment of blight?",
+        "what is medicine of blight?",
+        "how to  management and control of blight in corn leaf? "
+      ],
+      "responses": [
+        "Treating northern corn leaf blight involves using fungicides. For most home gardeners this step isn't needed, but if you have a bad infection, you may want to try this chemical treatment. The infection usually begins around the time of silking, and this is when the fungicide should be applied. Delaro® 325 SC Fungicide and Delaro® Complete Fungicide are both labeled for the control of NCLB. The labels state that either product can be sprayed when the disease first appears. With the use of Delaro® 325 SC Fungicide, if disease development persists a second application can be made at a 7- to 14-day interval.",
+        "A general recommendation for corn foliar diseases caused by fungal pathogens is to consider a fungicide application if a disease is present on the third leaf below the ear leaf or higher on 50% of the plants at tasseling and if the product is susceptible to the disease. Both Delaro® 325 SC Fungicide and Delaro® Complete Fungicide are approved for managing NCLB (Northern Corn Leaf Blight). According to their labels, either of these products can be applied as soon as the disease becomes apparent. In the case of Delaro® 325 SC Fungicide, if the disease continues to progress, a second application can be administered with a 7- to 14-day gap."
+      ]
+    },
+    {
+      "tag": "cause_blight",
+      "patterns": [
+        "cause of blight in corn leaf",
+        "what is the cause of blight in corn leaf",
+        "what are the cause of blight in corn leaf"
+      ],
+      "responses": [
+        "Blight in corn leaves can be caused by several different pathogens, with the two most common culprits being fungal diseases and bacterial diseases."
+      ]
+    },
+    {
+      "tag": "effect_blight",
+      "patterns": [
+        "effects of blight in corn leaf",
+        "effects of blight",
+        "what is the effect of blight in corn leaf",
+        "what are the effect of blight in corn leaf"
+      ],
+      "responses": [
+        "NCLB can reduce yield when conditions are favorable for early development of the disease. Lesions reduce the leaf area of the plant that carries out photosynthesis.",
+        "The more lesions on a plant and the earlier in the season the lesions develop, the greater the loss of photosynthet- ic area.?"
+      ]
+    },
+    {
+      "tag": "history_blight",
+      "patterns": [
+        "history of blight in corn leaf",
+        "history of blight",
+        "what is the history of blight in corn leaf",
+        "what are the history of blight in corn leaf"
+      ],
+      "responses": [
+        "The disease, which first appeared in the United States in 1968, reached epidemic status in 1970 and destroyed about 15% of the corn belt's crop production that year. In 1970 the disease began in the southern United States and by mid-August had spread north to Minnesota and Maine.",
+        "This pathogen was first described in the early 1900s in the United States. It causes characteristic cigar-shaped lesions on corn leaves."
+      ]
+    },
+    {
+      "tag": "healthy",
+      "patterns": ["what is the meaning of healthy corn?", "healthy corn?"],
+      "responses": [
+        "Healthy corn refers to corn plants that are in a robust, disease-free, and vigorous condition, exhibiting optimal growth and development.",
+        "Achieving and maintaining healthy corn crops require proper agronomic practices, such as soil preparation, crop rotation, pest and disease management, irrigation, and fertilization. Monitoring the field and responding to any emerging issues promptly is essential to ensure that the corn crop remains healthy and reaches its full yield potential."
+      ]
+    },
+    {
+      "tag": "grayspot",
+      "patterns": [
+        "what is gray spot in corn leaf?",
+        "gray spot in corn leaf?",
+        "gray spot",
+        "what is GLS",
+        "GLS meaning"
+      ],
+      "responses": [
+        "Grey leaf spot (GLS) is a foliar fungal disease that affects maize, also known as corn. GLS is considered one of the most significant yield-limiting diseases of corn worldwide. There are two fungal pathogens that cause GLS: Cercospora zeae-maydis and Cercospora zeina.",
+        "Grey leaf spot (GLS) A gray spot on a corn leaf could be indicative of various issues, such as disease or pest damage. Without more specific information or a visual inspection, it's challenging to pinpoint the exact cause of the gray spot. ",
+        "Gray leaf spot (GLS) is a common fungal disease in the United States caused by the pathogen Cercospora zeae-maydis in corn. Disease development is favored by warm temperatures, 80°F or 27 °C; and high humidity, relative humidity of 90% or higher for 12 hours or more."
+      ]
+    },
+    {
+      "tag": " foliar fungal ",
+      "patterns": [
+        "what is foliar fungal on corn?",
+        "foliar fungal?",
+        "what is foliar fungal ?"
+      ],
+      "responses": [
+        "Foliar fungal diseases are a group of plant diseases that affect the leaves of various crops and ornamental plants. ",
+        "These diseases are caused by fungal pathogens that infect and damage the leaves, often leading to characteristic symptoms such as spots, lesions, discoloration, and in severe cases, leaf death. "
+      ]
+    },
+    {
+      "tag": "cure_grayspot",
+      "patterns": [
+        "what is cure of gray spot?",
+        "what is cure of GLS?",
+        "what is treatment for GLS?",
+        "what is cure for gray spot?",
+        "what is treatment of gray spot?",
+        "what is treatment for gray spot?",
+        "what is medicine for gray spot?",
+        "how to  management and control of gray spot in corn leaf GLS? "
+      ],
+      "responses": [
+        "Farmers must consider the cost of the application and market value of their corn before determining if fungicides will be an economical solution to GLS(gray leaf spot).",
+        "Managing leaf wetness is an effective means for minimizing gray leaf spot in all hosts. Schedule irrigation early in the morning, before sunrise, and never in the late afternoon or evening. Prune or remove trees, shrubs, or other barriers to increase air movement and sunlight penetration."
+      ]
+    },
+    {
+      "tag": "cause_grayspot",
+      "patterns": [
+        "cause of gray spot in corn leaf",
+        "what is the cause of gray spot in corn leaf",
+        "what are the cause of gray spot in corn leaf",
+        "cause of gray spot"
+      ],
+      "responses": [
+        "Gray leaf spot (GLS) is primarily caused by the fungal pathogen Cercospora zeae-maydis. This disease affects corn (maize) plants, leading to characteristic gray to tan-colored lesions with dark borders on the leaves. ",
+        "Gray leaf spot, caused by the fungus Cercospora zeae-maydis, occurs virtually every growing season. If conditions favor disease development, economic losses can occur. Symptoms first appear on lower leaves about two to three weeks before tasseling."
+      ]
+    },
+
+    {
+      "tag": "effect_grayspot",
+      "patterns": [
+        "effects of gray spot in corn leaf",
+        "effects of gray spot",
+        "what is the effect of gray spot in corn leaf",
+        "what are the effect of gray spot in corn leaf"
+      ],
+      "responses": [
+        "Gray leaf spot reduces an ear's photosynthetic area, the number of kernels per ear also are reduced, resulting in yield loss.",
+        "Severe outbreaks of Gray leaf spot can result in losses resulting from reduced photosynthesis and grain fill "
+      ]
+    },
+    {
+      "tag": "history_grayspot",
+      "patterns": [
+        "history of gray spot on corn leaf",
+        "history of gray spot",
+        "what is the history of gray spot on corn leaf",
+        "what are the history of gray spot on corn leaf"
+      ],
+      "responses": [
+        "Gray leaf spot, caused by the fungus Cercospora zeae maydis is the most significant yield-limiting disease of corn worldwide. The disease was first reported in Illinois in 1924, and has increased in prevalence throughout corn growing regions since 1988.",
+        "Its history is relatively recent, as it was first recognized as a distinct disease in the late 1970s and has since become a major concern for corn growers, particularly in regions with warm and humid climates."
+      ]
+    },
+    {
+      "tag": "symptoms_grayspot",
+      "patterns": [
+        "symptom of gray spot in corn leaf",
+        "what are the symptoms of gray spot? ",
+        "what are symptoms of gray spot",
+        "symptoms of gray spot",
+        "symptoms of gray spot on corn leaf"
+      ],
+      "responses": [
+        "Symptoms of gray leaf spot are usually first noticed in the lower leaves. Initially, lesions of gray leaf spot begin as a small dot with a yellow halo. Lesions will elongate over time running parallel to the veins becoming pale brown to gray and rectangular in shape with blunt ends.",
+        "Symptoms include small, rectangular to elongated gray to tan lesions with parallel sides on corn leaves. These lesions interfere with photosynthesis, leading to reduced plant health and premature leaf death. "
+      ]
+    },
+    {
+      "tag": "commonrust",
+      "patterns": [
+        "What is common rust?",
+        "common rust?",
+        "What is common rust on corn leaf?"
+      ],
+      "responses": [
+        "Common rust causes elongated pustules on both leaf surfaces that range in colour from rust to dark brown. Cinnamon-brown urediniospores, often known as rust spores, are present in the pustules. Older pustules get darker. Sheaths can get diseased, much like the leaves themselves. Dead leaves or chlorosis may appear under extreme circumstances.",
+        "Corn (maize) plants are susceptible to a fungal disease called Puccinia sorghi, which is technically known as common rust in corn. It is among the most common and well-known maize diseases. If common rust is not controlled, it can seriously harm maize harvests.",
+        "Common rust, Common rust is caused by the fungus Puccinia sorghi and occurs every growing season. It is seldom a concern in hybrid corn. Rust pustules usually first appear in late June. Early symptoms of common rust are chlorotic flecks on the leaf surface."
+      ]
+    },
+    {
+      "tag": "cause_commonrust",
+      "patterns": [
+        "cause of common rust in corn leaf",
+        "what is the cause of common rust in corn leaf",
+        "what are the Cause of common rust on corn leaf",
+        "cause of common rust"
+      ],
+      "responses": [
+        "Common rust is caused by the fungus Puccinia sorghi. Late occurring infections have limited impact on yield.",
+        "Common rust in corn (Puccinia sorghi) is caused by a fungal pathogen. The primary cause of common rust is the fungus Puccinia sorghi. "
+      ]
+    },
+    {
+      "tag": "Puccinia_sorghi",
+      "patterns": [
+        "what is puccinia sorghi?",
+        "puccinia sorghi",
+        "puccinia",
+        "sorghi",
+        "what is puccinia ",
+        "what is puccinia sorghi on corn leaf"
+      ],
+      "responses": [
+        "A fungal infection called Puccinia sorghi is responsible for common rust in maize plants. Puccinia sorghi, the culprit behind common rust, is a common and very consequential disease in maize farming. ",
+        "Late occurring infections have limited impact on yield. The fungus overwinters on plants in southern states and airborne spores are wind-blown to northern states during the growing season. Disease development is favored by cool, moist weather (60 – 70◦ F)."
+      ]
+    },
+    {
+      "tag": "symptoms_commonrust",
+      "patterns": [
+        "symptoms  of common rust in corn leaf",
+        "what are the symptoms of common rust? ",
+        "what are symptoms of common rust",
+        "symptoms of common rust",
+        "symptoms of common rust on corn leaf"
+      ],
+      "responses": [
+        "Symptoms of common rust frequently occur after silking. Small, round to elongate brown pustules occur on both leaf surfaces and other above ground sections of the plant. As the pustules grow they become brown to black. If illness is severe, the leaves may yellow and die early.",
+        "Its symptoms include small pustules on leaves that start yellow or orange and turn reddish-brown to black, along with rusty spore masses. Common rust can reduce photosynthesis, cause leaf discoloration, and lead to early leaf aging. ",
+        "These pustules have a rusty or reddish-brown color, giving the disease its name."
+      ]
+    },
+    {
+      "tag": "cure_commonrust",
+      "patterns": [
+        "what is cure of common rust ?",
+        "what is cure for common rust ?",
+        "what is treatment of common rust ?",
+        "what is treatment for common rust ?",
+        "what is medicine for common rust ?",
+        "how to  management and control of common rust  in corn leaf? "
+      ],
+      "responses": [
+        "Fungicides have been used against both common and southern rust, but they are usually not needed in maize because of the resistance bred into commercial varieties. However, foliar fungicides may have a use on sweet corn. A number of protectant fungicide have been recommended: e.g., chlorothalonil and mancozeb.",
+        "Chemical fungicides can be used to manage common rust, especially when the disease reaches a threshold level",
+        "The best management practice is to use resistant corn hybrids. Fungicides can also be beneficial, especially if applied early when few pustules have appeared on the leaves."
+      ]
+    },
+    {
+      "tag": "effect_commonrust",
+      "patterns": [
+        "effects of common rust in corn leaf",
+        "effects of common rust",
+        "what is the effect of common rust in corn leaf",
+        "what are the effect of common rust in corn leaf"
+      ],
+      "responses": [
+        "Common rust produces rust-colored to dark brown, elongated pustules on both leaf surfaces. The pustules contain rust spores (urediniospores) that are cinnamon brown in color. Pustules darken as they age. Leaves, as well as sheaths, can be infected.",
+        "Small, round to elongate brown pustules form on both leaf surfaces and other above ground parts of the plant. As the pustules mature they become brown to black. If disease is severe, the leaves may yellow and die early."
+      ]
+    },
+    {
+      "tag": "azoxystrobin",
+      "patterns": [
+        "what is azoxystrobin",
+        "azoxystrobin fungicide",
+        "how does azoxystrobin work",
+        "uses of azoxystrobin"
+      ],
+      "responses": [
+        "Azoxystrobin is a fungicide belonging to the strobilurin class. It is widely used in agriculture to control various fungal diseases in crops.",
+        "Azoxystrobin is commonly used to control diseases caused by fungi, including rusts, leaf spots, and other foliar diseases.",
+        "Azoxystrobin works by inhibiting the mitochondrial respiration in fungi, disrupting the energy production process and ultimately leading to the death of the fungal cells.",
+        "The main uses of azoxystrobin include its application on crops such as corn, soybeans, wheat, and others to protect them from fungal infections and improve overall crop yield."
+      ]
+    },
+    {
+      "tag": "pyraclostrobin",
+      "patterns": [
+        "what is pyraclostrobin",
+        "pyraclostrobin fungicide",
+        "how does pyraclostrobin work",
+        "uses of pyraclostrobin"
+      ],
+      "responses": [
+        "Pyraclostrobin is a fungicide belonging to the strobilurin class. It is commonly used in agriculture to control various fungal diseases in crops.",
+        "Pyraclostrobin is widely used to combat fungal infections in crops such as corn, soybeans, wheat, and others.",
+        "One of the main uses of pyraclostrobin is to protect crops from foliar diseases, improve overall crop health, and enhance yield."
+      ]
+    },
+    {
+      "tag": "picoxystrobin",
+      "patterns": [
+        "what is picoxystrobin",
+        "picoxystrobin fungicide",
+        "how does picoxystrobin work",
+        "uses of picoxystrobin"
+      ],
+      "responses": [
+        "Picoxystrobin is a fungicide used in agriculture to control various fungal diseases in crops.",
+        "Picoxystrobin is commonly applied to crops such as corn, soybeans, and others to combat fungal infections.",
+        "The mode of action of picoxystrobin involves disrupting the fungal cell's energy production process by inhibiting mitochondrial respiration, ultimately leading to the death of the fungi.",
+        "One of the main uses of picoxystrobin is to protect crops from foliar diseases, enhance overall crop health, and improve yield."
+      ]
+    },
+    {
+      "tag": "propiconazole",
+      "patterns": [
+        "what is propiconazole",
+        "propiconazole fungicide",
+        "how does propiconazole work",
+        "uses of propiconazole"
+      ],
+      "responses": [
+        "Propiconazole is a triazole fungicide, also known as a DMI, or demethylation inhibiting fungicide due to its binding with and inhibiting the 14-alpha demethylase enzyme from demethylating a precursor to ergosterol.",
+        "Propiconazole is commonly applied to crops such as cereals, corn, vegetables, and turf to combat fungal infections.",
+        "The mode of action of propiconazole involves inhibiting the biosynthesis of ergosterol in fungal cell membranes, disrupting their integrity and function.",
+        "One of the main uses of propiconazole is to protect crops from a range of foliar and systemic diseases, thereby improving overall crop health and yield."
+      ]
+    },
+
+    {
+      "tag": "prothioconazole",
+      "patterns": [
+        "what is prothioconazole",
+        "prothioconazole fungicide",
+        "how does prothioconazole work",
+        "uses of prothioconazole"
+      ],
+      "responses": [
+        "Prothioconazole is a broad-spectrum systemic fungicide produced by Bayer CropScience for the control of diseases caused by ascomycetes, basidiomycetes, and deuteromycetes.",
+        "Prothioconazole is commonly applied to crops such as cereals, oilseeds, and pulses to combat fungal infections.",
+        "The mode of action of prothioconazole involves inhibiting the biosynthesis of ergosterol in fungal cell membranes, disrupting their integrity and function.",
+        "One of the main uses of prothioconazole is to protect crops from a range of foliar and systemic diseases, contributing to improved overall crop health and yield."
+      ]
+    },
+
+    {
+      "tag": "tetraconazole",
+      "patterns": [
+        "what is tetraconazole",
+        "tetraconazole fungicide",
+        "how does tetraconazole work",
+        "uses of tetraconazole"
+      ],
+      "responses": [
+        "Tetraconazole is a fungicide used in agriculture to control various fungal diseases in crops.",
+        "Tetraconazole is commonly applied to crops such as cereals, fruits, and vegetables to combat fungal infections.",
+        "The mode of action of tetraconazole involves inhibiting the biosynthesis of ergosterol in fungal cell membranes, disrupting their integrity and function.",
+        "One of the main uses of tetraconazole is to protect crops from a range of foliar and systemic diseases, contributing to improved overall crop health and yield."
+      ]
+    },
+
+    {
+      "tag": "benzovindiflupyr",
+      "patterns": [
+        "what is benzovindiflupyr",
+        "benzovindiflupyr fungicide",
+        "how does benzovindiflupyr work",
+        "uses of benzovindiflupyr"
+      ],
+      "responses": [
+        "Benzovindiflupyr also known as solatenol belongs to the dehydrogenase inhibitor (SDHI) pyrazole-carboxamide class of fungicides",
+        "Benzovindiflupyr is commonly applied to crops such as cereals, soybeans, and others to combat fungal infections.",
+        "The mode of action of benzovindiflupyr involves inhibiting the succinate dehydrogenase enzyme in the fungal cell, disrupting the energy production process and ultimately leading to the death of the fungal cells.",
+        "One of the main uses of benzovindiflupyr is to protect crops from foliar diseases, contributing to improved overall crop health and yield."
+      ]
+    },
+
+    {
+      "tag": "cyproconazole",
+      "patterns": [
+        "what is cyproconazole",
+        "cyproconazole fungicide",
+        "how does cyproconazole work",
+        "uses of cyproconazole"
+      ],
+      "responses": [
+        "Cyproconazole is a fungicide used in agriculture to control various fungal diseases in crops.",
+        "Cyproconazole is commonly applied to crops such as cereals, fruits, and vegetables to combat fungal infections.",
+        "The mode of action of cyproconazole involves inhibiting the biosynthesis of ergosterol in fungal cell membranes, disrupting their integrity and function.",
+        "One of the main uses of cyproconazole is to protect crops from a range of foliar and systemic diseases, contributing to improved overall crop health and yield."
+      ]
+    },
+
+    {
+      "tag": "flutriafol",
+      "patterns": [
+        "what is flutriafol",
+        "flutriafol fungicide",
+        "how does flutriafol work",
+        "uses of flutriafol"
+      ],
+      "responses": [
+        "Flutriafol is a systemic, demethylation inhibitor (DMI) fungicide that can be used as a curative or a preventive treatment.",
+        "It belongs to the triazole class of fungicides and is effective against various fungal pathogens.",
+        "Flutriafol works by inhibiting the biosynthesis of ergosterol in fungal cell membranes, disrupting their integrity and function.",
+        "Commonly applied to cereals, fruits, and vegetables, flutriafol provides broad-spectrum protection and contributes to enhanced crop health and yield."
+      ]
+    },
+    {
+      "tag": "pydiflumetofen",
+      "patterns": [
+        "what is pydiflumetofen",
+        "pydiflumetofen fungicide",
+        "how does pydiflumetofen work",
+        "uses of pydiflumetofen"
+      ],
+      "responses": [
+        "Pydiflumetofen is a broad spectrum fungicide used in agriculture to protect crops from fungal diseases.",
+        "It belongs to the carboxamide class of fungicides and exhibits excellent systemic and translaminar activity.",
+        "The mode of action of pydiflumetofen involves inhibiting the succinate dehydrogenase enzyme in fungal cells, disrupting the energy production process.",
+        "Pydiflumetofen is commonly applied to crops such as vegetables, fruits, and ornamentals to protect them from a range of foliar and systemic diseases, contributing to improved overall crop health and yield."
+      ]
+    },
+    {
+      "tag": "fluoxastrobin",
+      "patterns": [
+        "what is fluoxastrobin",
+        "fluoxastrobin fungicide",
+        "how does fluoxastrobin work",
+        "uses of fluoxastrobin"
+      ],
+      "responses": [
+        "Fluoxastrobin is a member of the group of quinoyl outer or oxidizing binding site inhibitor (QoI) fungicides. Fluoxastrobin is a strobilurin fungicide, a subgroup of QoI chemicals, which includes such important fungicides as azoxystrobin, pyraclostrobin, and trifloxystrobin.",
+        "Fluoxastrobin is a fungicide used in agriculture to control various fungal diseases in crops. It belongs to the strobilurin class of fungicides, which inhibit the respiratory complex III in fungi, disrupting their ability to generate energy. "
+      ]
+    },
+    {
+      "tag": "trifloystrobin",
+      "patterns": [
+        "what is trifloystrobin",
+        "trifloystrobin fungicide",
+        "how does trifloystrobin work",
+        "uses of trifloystrobin",
+        "trifloystrobin"
+      ],
+      "responses": [
+        "Fluoxastrobin is a member of the group of quinoyl outer or oxidizing binding site inhibitor (QoI) fungicides. Fluoxastrobin is a strobilurin fungicide, a subgroup of QoI chemicals, which includes such important fungicides as azoxystrobin, pyraclostrobin, and trifloxystrobin.",
+        "Fluoxastrobin is a fungicide used in agriculture to control various fungal diseases in crops. It belongs to the strobilurin class of fungicides, which inhibit the respiratory complex III in fungi, disrupting their ability to generate energy. "
+      ]
+    },
+    {
+      "tag": "rusty",
+      "patterns": [
+        "what is reddish-brown color",
+        "what is reddish brown color",
+        "elongated brown pustules",
+        "rust-colored",
+        "rust colored",
+        "dark brown",
+        "cinnamon brown",
+        "it feel rusty",
+        "aging and yellowing"
+      ],
+      "responses": [
+        "It is Common rust on corn leaves it is a fungal disease caused by Puccinia sorghi.",
+        "It is Common rust produces rust-colored to dark brown, elongated pustules on both leaf surfaces. The pustules contain rust spores (urediniospores) that are cinnamon brown in color. Pustules darken as they age. Leaves, as well as sheaths, can be infected."
+      ]
+    },
+    {
+      "tag": "blights",
+      "patterns": [
+        "what is canoe shaped",
+        "what is canoe-shaped lesions 1 inch to 6 inches long",
+        "gray-green margins",
+        "gray green",
+        "irregular brown spots",
+        "grayish-white to tan or brown",
+        "grayish white"
+      ],
+      "responses": [
+        "It is Northern corn leaf blight (NCLB) is a disease of corn caused by the fungus, Exserohilum turcicum.",
+        "It is NCLB also causes significant reduction in quality in sweet corn and silage corn."
+      ]
+    },
+    {
+      "tag": "spot",
+      "patterns": [
+        "what is rectangular, tan to gray lesions with dark borders on the leaves",
+        "what is dark borders",
+        "gray lesions",
+        "grayish lesions",
+        "cigar-shaped and have a grayish center",
+        "cigar shaped",
+        "necrotic spots with halos"
+      ],
+      "responses": [
+        "It is Gray spots on corn leaves can be indicative of various plant diseases or environmental stressors.",
+        "It is Gray leaf spot, caused by the fungus Cercospora zeae-maydis, occurs virtually every growing season. If conditions favor disease development, economic losses can occur. Symptoms first appear on lower leaves about two to three weeks before tasseling."
+      ]
+    },
+    {
+      "tag": "heal",
+      "patterns": [
+        "what is green color on the leaves",
+        "leaf surface is smooth"
+      ],
+      "responses": [
+        "It is A healthy corn leaf typically has a vibrant green color."
+      ]
+    },
+    {
+      "tag": "exserohilum ",
+      "patterns": ["what is exserohilum turcicum", "exserohilum turcicum"],
+      "responses": [
+        "Exserohilum turcicum is a plant pathogenic fungus that primarily affects corn (maize) crops.",
+        "It is the causal agent of northern corn leaf blight (NCLB), a common foliar disease that can lead to significant yield losses in corn production. This fungus belongs to the family Pleosporaceae."
+      ]
+    },
+    {
+      "tag": "pleosporales ",
+      "patterns": ["what is pleosporales", "pleosporales"],
+      "responses": [
+        "Pleosporaceae is a family of fungi that belongs to the order Pleosporales. ",
+        "This family is diverse and includes a wide range of fungal species, many of which are plant pathogens, while others can be found in various ecological niches. "
+      ]
+    },
+
+    {
+      "tag": "characteristic of rust ",
+      "patterns": [
+        "what is common rust look like",
+        "characteristic of common rust on corn leaf",
+        "characteristic of common rust ",
+        "discribe common rust"
+      ],
+      "responses": [
+        "The most noticeable characterisctic is the development of small, raised pustules on both sides of the corn leaves. The pustules are typically circular or oval in shape. They are relatively small and dense, often clustered together.",
+        "These pustules have a rusty or reddish-brown color, giving the disease its name."
+      ]
+    },
+    {
+      "tag": "characteristic of nclb ",
+      "patterns": [
+        "what is northern corn leaf blight look like",
+        "charactaristic of northern corn leaf blight on corn leaf",
+        "discribe northern corn leaf blight",
+        "what is nclb look like",
+        "characteristic of northern corn leaf blight",
+        "characteristic of nclb on corn leaf",
+        "discribe nclb"
+      ],
+      "responses": [
+        "The primary you can see is the development of lesions on corn leaves. Lesions are typically elliptical in shape.",
+        "Initially, lesions appear as small, tan spots with a grayish-white center.",
+        " NCLB lesions often start on the lower leaves of the corn plant and progress upward as the disease advances.",
+        "Lesions can elongate and expand, coalescing into larger affected areas.",
+        "Mature lesions often have dark borders, creating a distinct contrast with the lighter center. Over time, lesions can turn from grayish-white to tan or brown."
+      ]
+    },
+    {
+      "tag": "characteristic of gray spot  ",
+      "patterns": [
+        "what is gray spot  look like",
+        "characteristic of gray spot  on corn leaf",
+        "characteristic of gray spot",
+        "discribe gray spot "
+      ],
+      "responses": [
+        " It appears as rectangular, tan to gray lesions with dark borders on the leaves.",
+        "The disease first appears in the form of small, necrotic spots with halos. These usually expand to become rectangular lesions, about 1/8 inch wide by up to 2 inches to 3 inches long and gray to brown in appearance."
+      ]
+    }
+  ]
+}

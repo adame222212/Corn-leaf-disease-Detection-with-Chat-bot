@@ -1,0 +1,6 @@
+Image,Class,Treatment,Confidence
+test_rust_close.jpg,Common Rust,"The best management practice is to use resistant corn hybrids. Fungicides can also be beneficial, especially if applied early when few pustules have appeared on the leaves.",0.9999996423721313
+test_healthy.jpg,Healthy,"This is healthy, no worries",0.9999979734420776
+test_healthy.jpg,Healthy,"This is healthy, no worries",0.9999979734420776
+test_healthy.jpg,Healthy,"This is healthy, no worries",0.9999979734420776
+test_blight.jpg,Northern Blight,"Selecting resistant hybrids; reducing corn residue by crop rotation, tillage, or stover harvest; and applying foliar fungicides are the primary means of controlling NCLB.",0.9999172687530518

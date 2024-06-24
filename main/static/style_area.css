@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+}
+body {
+  background-image: url(/main/static/mais.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+.container_csv {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  width: 750px;
+  height: 430px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+h1 {
+  font-size: 25pt;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.bot {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: #fcfcfd;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.bot:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+.bot:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+.insert {
+  font-size: 17pt;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  z-index: 33;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.navs {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 10px;
+}
+.navs:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10%;
+  text-decoration-line: underline;
+  transition: all 0.2s ease;
+}
+
+.logo {
+  width: 50px;
+  display: block;
+}

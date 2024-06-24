@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  z-index: 33;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.navs {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 10px;
+}
+.navs:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10%;
+  text-decoration-line: underline;
+  transition: all 0.2s ease;
+}
+
+.logo {
+  width: 50px;
+  display: block;
+}
+body {
+  background-image: url(/main/static/mais.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p,
+h2,
+h1,
+li {
+  font-family: "Oxygen", sans-serif;
+}
+.myplot {
+  text-align: end;
+}
+.subcon {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+
+  align-items: center;
+  margin: auto;
+}
+#hid {
+  display: none;
+  width: 800px;
+  height: 1100px;
+  margin-left: -350px;
+}
+.main {
+  width: 800px;
+  background-color: white;
+  padding: 20px;
+}
+.heatmap {
+  width: 800px;
+
+  height: 600px;
+}
+.plots {
+  width: 400px;
+}
+.conFi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Adjust the gap between columns as needed */
+  background-color: white;
+  margin-bottom: 20px;
+}
+.bld {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.named {
+  color: red;
+}
+.sim {
+  display: block; /* Ensure each .sim is a block element */
+}
+
+.subFi {
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+  margin-top: 10px;
+  padding: 10px; /* Add padding as needed */
+}
+span {
+  font-weight: bolder;
+}
+h1 {
+  text-align: center;
+}
+#displayButton {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: 20px;
+  width: 150px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: #fcfcfd;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+#displayButton:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+#displayButton:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+#displayButton .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-left: 25px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+#displayButton:hover .tooltiptext {
+  visibility: visible;
+}

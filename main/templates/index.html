@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{{ url_for('static', filename='logo.jpg') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Croissant+One&family=Fuggles&family=Libre+Baskerville&family=Oswald&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Chatbot and Image Classification</title>
+    <meta name="theme-color" content="#164863" />
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="{{ url_for('static', filename='logo.jpg') }}"
+        alt="MYLOGO"
+      />
+      <li>
+        <ul>
+          <a class="navs home" href="#home">Home</a>
+        </ul>
+        <ul>
+          <a class="navs contact" href="#Lastcon">System Info</a>
+        </ul>
+        <ul>
+          <a class="navs about" href="#about">About</a>
+        </ul>
+      </li>
+    </nav>
+    <div class="pinaka">
+      <div class="Finalcon">
+        <section id="home">
+          <h1>Corn Leaf disease detection with Chat Bot Ai</h1>
+          <div class="main_contanier">
+            <div class="sub_con">
+              <div class="container_image">
+                <h2>Disease Detection:</h2>
+                <form
+                  action="/image_classification"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <input type="file" name="file" accept="image/*" required />
+                  <input
+                    class="bot_img"
+                    type="submit"
+                    value="Upload and Classify"
+                  />
+                  <br />
+                  <div class="in_im">
+                    <img
+                      class="inserted_imge"
+                      id="uploaded-image"
+                      src=""
+                      style="max-width: 300px"
+                    />
+                  </div>
+                  <label for="button_value">
+                    Field where it detects:
+                    <select class="myDropdown" name="button_value" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </label>
+                </form>
+                <p class="classi status">
+                  LEAF STATUS: <span class="maintats" id="image-class"></span>
+                </p>
+                <p class="classi what">
+                  DEFINITION: <span class="maintats" id="image-diff"></span>
+                </p>
+                <a class="nextP" href="{{ url_for('area_analysis') }}"
+                  >Severity
+                  <span class="tooltiptext"
+                    >It will display each Field what disease is severe</span
+                  ></a
+                >
+              </div>
+              <div class="line"></div>
+              <div class="container_chat">
+                <h2>Chatbot:</h2>
+                <form action="/chat" method="post">
+                  <input
+                    spellcheck="true"
+                    type="text"
+                    name="user_message"
+                    class="input-style"
+                    placeholder="Type your message..."
+                    required
+                  />
+                  <input class="bot" type="submit" value="Send" />
+                </form>
+                <p class="my_ai">
+                  Hi!, I'm Corn Bot. your personal chat bot. You can ask me
+                  related to corn leaf.
+                </p>
+                <p class="chat_res main">
+                  Corn Bot: <br /><span
+                    class="responses"
+                    id="chatbot-response"
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br />
+        <section id="Lastcon">
+          <div class="conSer">
+            <div class="conImage box trans">
+              <img
+                class="ana"
+                src="/main/static/curiosity child-pana.svg"
+                alt=""
+              />
+              <h2 class="mytxt">Disease Detection</h2>
+              <p class="classif">
+                User can access the system by capturing images of corn leaf
+                through a smartphone and input it into the upload button. It
+                will classify what disease the leaf has and display the
+                definition. For confidence, it shows how accurate the system is
+                from that image.
+              </p>
+            </div>
+            <div class="conChat box trans">
+              <img class="ana" src="/main/static/Chat bot-amico.svg" alt="" />
+              <h2 class="mytxt">Chat Bot</h2>
+              <p class="classif">
+                Users can ask questions related to corn or the system, and the
+                chat bot will provide answers from its dataset.
+              </p>
+            </div>
+            <div class="conAre box trans">
+              <img class="ana" src="/main/static/Robot arm-bro.svg" alt="" />
+              <h2 class="mytxt">Severity of Diseases</h2>
+              <p class="classif">
+                Users can export a CSV file from the website. Through that CSV
+                file, it will display each field with severe disease to combat
+                it before it affects others.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="conconAB">
+            <img
+              class="myimg trans"
+              src="/main/static/brand communication-amico.svg"
+              alt=""
+            />
+            <p class="trans my_about">
+              Our groundbreaking thesis, 'Corn Leaf Diseases Detection with
+              Chatbot Website,' explores the innovative integration of computer
+              vision technology to identify and diagnose various corn leaf
+              diseases, coupled with an interactive chatbot interface on a
+              dedicated website, revolutionizing agricultural practices for
+              enhanced crop management and disease prevention.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      const boxes = document.querySelectorAll(".trans");
+
+      window.addEventListener("scroll", checkbox);
+      checkbox();
+
+      function checkbox() {
+        const trigger = (window.innerHeight / 5) * 4;
+        boxes.forEach((trans) => {
+          const boxTop = trans.getBoundingClientRect().top;
+
+          if (boxTop < trigger) {
+            trans.classList.add("show");
+          } else {
+            trans.classList.remove("show");
+          }
+        });
+      }
+
+      // Chatbot form submission
+      document
+        .querySelector('form[action="/chat"]')
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var userMessage = document.querySelector(
+            'input[name="user_message"]'
+          ).value;
+
+          // Convert the user input to lowercase
+          userMessage = userMessage.toLowerCase();
+
+          // Remove the element with class "my_ai"
+          var myAiElement = document.querySelector(".my_ai");
+          if (myAiElement) {
+            myAiElement.remove();
+          }
+
+          fetch("/chat", {
+            method: "POST",
+            body: new URLSearchParams({ user_message: userMessage }),
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("chatbot-response").innerText = data;
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        });
+
+      document
+        .querySelector('form[action="/image_classification"]')
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var formData = new FormData(this);
+
+          // Check if the form contains an image
+          if (formData.has("file")) {
+            // Get the selected value from the dropdown
+            var dropdown = document.querySelector(".myDropdown");
+            var selectedValue = dropdown.value;
+
+            // If submitted by the submit button, send image classification request
+            fetch("/image_classification", {
+              method: "POST",
+              body: formData,
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                document.getElementById("image-class").innerText = data.class;
+                document.getElementById("image-diff").innerText = data.Diff;
+
+                // Display the uploaded image
+                var uploadedImage = document.getElementById("uploaded-image");
+                uploadedImage.src = URL.createObjectURL(formData.get("file"));
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+              });
+          } else {
+            // If the form doesn't contain an image, display a message or take other actions
+            console.log("Please select an image before submitting.");
+            // You can add more logic here, such as displaying an alert or changing UI elements.
+          }
+        });
+    </script>
+  </body>
+</html>
